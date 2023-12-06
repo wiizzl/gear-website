@@ -1,0 +1,133 @@
+nav {
+    background-color: black;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--second-color);
+    user-select: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-logo {
+    margin-left: 2.5rem;
+}
+
+nav .nav-first_links {
+    margin-right: auto;
+}
+
+nav .nav-first_links ul {
+    display: flex;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+nav .nav-first_links ul li:nth-child(1) {
+    margin-left: 6rem;
+}
+
+nav .nav-first_links ul li {
+    margin-right: 2.8rem;
+    font-size: 0.96rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav .nav-first_links ul li a {
+    position: relative;
+    color: var(--text-color);
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--text-color);
+        transition: width 0.3s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+nav .nav-button {
+    margin-right: 4rem;
+}
+
+nav .nav-button button {
+    background-color: var(--text-color);
+    color: black;
+    border: 1px solid var(--second-color);
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 450;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+nav .nav-second_links ul li {
+    margin-right: 1.3rem;
+}
+
+nav .nav-second_links ul li a svg{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.modal {
+    font-size: 12px;
+}
+
+.modal > .header {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    color: #3db63d;
+}
+
+.modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 1px solid var(--second-color);
+}
+
+.modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+  
+.modal > .close {
+    position: absolute;
+    right: -3px;
+    cursor: pointer;
+    position: absolute;
+    background: transparent;
+    border: none;
+    line-height: 20px;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 940px) {
+    nav {
+        background-color: red;
+    }
+}
