@@ -1,6 +1,6 @@
 import './css/App.css';
 
-import { createHashRouter, RouterProvider, Outlet, useRouteError} from 'react-router-dom';
+import { createHashRouter, RouterProvider, Outlet, useRouteError, useLocation } from 'react-router-dom';
 
 import { Accueil, Faq, Compte, Panier } from './pages';
 
@@ -43,8 +43,11 @@ function PageError() {
 }
 
 function Root() {
+    const location = useLocation();
+    const isAccueilPage = location.pathname === '/';
+    const isCartPage = location.pathname === '/cart';
     return <>
-        <Navbar/>
+        <Navbar bgColor={isAccueilPage ? "black" : "white"} cartPage={isCartPage ? "none" : "initial"}/>
         <Outlet/>
     </>
 }

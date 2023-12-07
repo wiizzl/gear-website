@@ -11,11 +11,13 @@ import { IoClose } from 'react-icons/io5';
 import { FaCheck } from 'react-icons/fa6';
 import { CiTrash } from "react-icons/ci";
 
-import logo from '../assets/images/logo.svg';
+import logowhite from '../assets/images/logo-white.svg';
+import logoblack from '../assets/images/logo-black.svg';
 import cartpreview from '../assets/images/cart-preview.webp';
 
-export function Navbar() {
+export function Navbar({ bgColor, cartPage }) {
     const navigate = useNavigate();
+    const textColor = bgColor === "black" ? "white" : "black";
     const backToHome = () => {
         navigate('/');
     }
@@ -23,23 +25,23 @@ export function Navbar() {
         navigate('/cart');
     }
     return <>
-        <nav>
+        <nav style={{backgroundColor: bgColor}}>
             <div className="nav-logo">
-                <Link to=""><img src={logo} alt=""/></Link>
+                <Link to=""><img src={bgColor === "black" ? logowhite : logoblack} alt=""/></Link>
             </div>
             <div className="nav-first_links">
                 <ul>
                     <li>
-                        <ScrollLink activeClass="active" to="presentation" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Présentation</ScrollLink>
+                        <ScrollLink style={{color: textColor}} activeClass="active" to="presentation" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Présentation</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink activeClass="active" to="features" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Caractéristiques</ScrollLink>
+                        <ScrollLink style={{color: textColor}} activeClass="active" to="features" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Caractéristiques</ScrollLink>
                     </li>
-                    <li><NavLink to="faq">FAQ</NavLink></li>
+                    <li><NavLink style={{color: textColor}} to="faq">FAQ</NavLink></li>
                 </ul>
             </div>
             <div className="nav-button">
-                <Popup trigger={<button>Commander</button>} modal nested>
+                <Popup trigger={<button style={{color: bgColor, backgroundColor: textColor, display: cartPage}}>Commander</button>} modal nested>
                     {close => (
                         <div className="button-modal">
                             <div className="modal-header">
@@ -86,11 +88,8 @@ export function Navbar() {
             </div>
             <div className="nav-second_links">
                 <ul>
-                    <li><NavLink to="account"><BsPerson/></NavLink></li>
-                    <li><NavLink to="cart"><CiShoppingCart/></NavLink></li>
-                    <li>
-                        
-                    </li>
+                    <li><NavLink to="account"><BsPerson style={{color: textColor}}/></NavLink></li>
+                    <li><NavLink to="cart"><CiShoppingCart style={{color: textColor}}/></NavLink></li>
                 </ul>
             </div>
         </nav>
