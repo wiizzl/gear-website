@@ -5,15 +5,22 @@ import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import Popup from 'reactjs-popup';
 
-import { CiShoppingCart } from "react-icons/ci";
-import { BsPerson } from "react-icons/bs";
+import { CiShoppingCart } from 'react-icons/ci';
+import { BsPerson } from 'react-icons/bs';
+import { IoClose } from 'react-icons/io5';
+import { FaCheck } from 'react-icons/fa6';
+import { CiTrash } from "react-icons/ci";
 
 import logo from '../assets/images/logo.svg';
+import cartpreview from '../assets/images/cart-preview.webp';
 
 export function Navbar() {
     const navigate = useNavigate();
     const backToHome = () => {
         navigate('/');
+    }
+    const goToCart = () => {
+        navigate('/cart');
     }
     return <>
         <nav>
@@ -34,25 +41,43 @@ export function Navbar() {
             <div className="nav-button">
                 <Popup trigger={<button>Commander</button>} modal nested>
                     {close => (
-                        <div className="modal">
-                            <button className="close" onClick={close}>&times;</button>
-                            <div className="header">
-                                &#10004;Article ajouté à votre panier
+                        <div className="button-modal">
+                            <div className="modal-header">
+                                <div className="header-icons">
+                                    <button onClick={close}><IoClose/></button>
+                                    <button onClick={close}><FaCheck/></button>
+                                </div>
+                                <div className="header-title">
+                                    <p>Article ajouté à votre panier</p>
+                                </div>
                             </div>
-                            <div className="content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta atque, voluptatibus praesentium esse soluta, quo debitis consequuntur in amet 
-                                laboriosam fuga. Numquam autem, aperiam cupiditate culpa repudiandae saepe molestias officiis cumque ipsam ullam corrupti vel placeat magni? 
-                                Perferendis maiores magnam itaque, consequatur cumque voluptatem, natus, veritatis eligendi quam quae magni?
-                            </div>
-                            <div className="actions">
+                            <div className="modal-content">
                                 <div>
-                                    <p>TOTAL</p>
-                                    <p>149.99€</p>
+                                    <p>Clavier mécanique Tryhard</p>
+                                    <button onClick={close}><CiTrash/></button>
+                                </div>
+                                <div>
+                                    <img src={cartpreview} alt=""/>
+                                    <p>compteur</p>
+                                </div>
+                                <div>
+                                    <button onClick={() => {
+                                        close();
+                                        goToCart();
+                                    }}>Voir le panier (1)</button>
+                                </div>
+                            </div>
+                            <div className="modal-actions">
+                                <div>
+                                    <ul>
+                                        <li>TOTAL</li>
+                                        <li>149.99 €</li>
+                                    </ul>
                                 </div>
                                 <p>Frais de livraison calculés à la prochaine étape.</p>
                                 <div>
-                                    <button className="button">Procéder au paiement</button>
-                                    <button className="button" onClick={close}>Continuer vos achats</button>
+                                    <button>Procéder au paiement</button>
+                                    <button onClick={close}>Continuer votre visite</button>
                                 </div>
                             </div>
                         </div>
@@ -63,6 +88,9 @@ export function Navbar() {
                 <ul>
                     <li><NavLink to="account"><BsPerson/></NavLink></li>
                     <li><NavLink to="cart"><CiShoppingCart/></NavLink></li>
+                    <li>
+                        
+                    </li>
                 </ul>
             </div>
         </nav>

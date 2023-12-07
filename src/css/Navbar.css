@@ -90,40 +90,123 @@ nav .nav-second_links ul li a svg{
     font-size: 2rem;
 }
 
-.modal {
-    font-size: 12px;
+nav .nav-button .button-modal {
+    background-color: red;
 }
 
-.modal > .header {
-    width: 100%;
-    font-size: 18px;
+.button-modal .modal-header .header-icons button {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    line-height: 20px;
+
+    &:nth-child(1) {
+        right: -3px;
+        font-size: 2rem;
+        
+        & svg {
+            color: black;
+        }
+    }
+
+    &:nth-child(2) {
+        font-size: 1.5rem;
+
+        & svg {
+            color: var(--valid-color);
+        }
+    }
+}
+
+.button-modal .modal-header .header-title p {
+    color: var(--valid-color);
     text-align: center;
-    padding: 5px;
-    color: #3db63d;
+    font-size: 1.2rem;
 }
 
-.modal > .content {
-    width: 100%;
-    padding: 10px 5px;
+.button-modal .modal-content {
     border-bottom: 1px solid var(--second-color);
+    padding-top: 1.5rem;
+
+    & img {
+        width: 10rem;
+    }
+
+    & div:nth-child(1) {
+        & button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    & div:nth-child(3) {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+
+        & button {
+            background-color: var(--text-color);
+            color: black;
+            border: 1px solid var(--second-color);
+            border-radius: 3rem;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 450;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            padding-right: 4rem;
+            padding-left: 4rem;
+            transition: transform 0.3s ease-in-out;
+    
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
 }
 
-.modal > .actions {
+.button-modal .modal-actions {
     width: 100%;
     padding: 10px 5px;
     margin: auto;
     text-align: center;
-}
-  
-.modal > .close {
-    position: absolute;
-    right: -3px;
-    cursor: pointer;
-    position: absolute;
-    background: transparent;
-    border: none;
-    line-height: 20px;
-    font-size: 3rem;
+
+    & ul li {
+        list-style: none;
+    }
+
+    & button:nth-child(1) {
+        background-color: black;
+        color: var(--text-color);
+        border: 1px solid var(--second-color);
+        border-radius: 3rem;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 450;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    & button:nth-child(2) {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
 }
 
 @media screen and (max-width: 940px) {
