@@ -1,9 +1,9 @@
 # gear-website
-This project has been created solely for the purpose of training and practicing web design skills by reproducing the design of a keyboard brand website associated with a YouTuber. It is crucial to emphasize that I am not the author of the original design or the source code of the mentioned website.
+This project has been created solely for the purpose of training and practicing web design skills by reproducing the design of a keyboard brand website associated with a YouTuber. It is crucial to emphasize that I am not the author of the original design or the source code of the mentioned website. Click [here](https://tryhard-gear.com/) to see the original website.
 
 ## Disclaimer
 
-**This project is a reproduction for training purposes only.** No elements of the original source code have been used in this project. The design, images, and any other content associated with the keyboard brand are the exclusive property of their creator.
+**This project is a reproduction for training purposes only.** No elements of the original source code have been used in this project. The design, images, and any other content associated with the keyboard brand are the exclusive property of their [creator](https://www.youtube.com/@CYRILmp4).
 
 ## Setup guide
 
@@ -49,7 +49,7 @@ If you would like to contribute to this training exercise, please follow these s
 
 ## Acknowledgments
 
-I would like to express gratitude to the original creator of the website for providing an inspiring design for this training project. Full credit for the design goes to [CyrilMP4](https://www.youtube.com/@CYRILmp4)
+I would like to express gratitude to the original creator of the website for providing an inspiring design for this training project. Full credit for the design goes to [CyrilMP4](https://www.youtube.com/@CYRILmp4).
 
 ## License
 
