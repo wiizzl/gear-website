@@ -5,6 +5,27 @@ This project has been created solely for the purpose of training and practicing 
 
 **This project is a reproduction for training purposes only.** No elements of the original source code have been used in this project. The design, images, and any other content associated with the keyboard brand are the exclusive property of their creator.
 
+## Setup guide
+
+1. Clone the repository
+
+```
+git clone https://github.com/wiizzl/gear-website
+```
+
+2. Install dependancies
+
+```
+npm install
+``` 
+
+3. Run the server in localhost
+
+
+```
+npm run dev
+```
+
 ## Project Goal
 
 The primary objective of this project is to develop skills in web design and development by replicating the design of an existing website. There is no intention of plagiarism, and this project is not intended for commercial use.
