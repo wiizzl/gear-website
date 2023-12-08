@@ -9,9 +9,9 @@ export const FaqItem = ({ question, answer }) => {
     return <>
         <div className="faq-item">
             <div>
-            <LuExpand/>
+                <h3 onClick={toggleAnswer}>{question}</h3>
+                <LuExpand/>
             </div>
-            <h3 onClick={toggleAnswer}>{question}</h3>
             {isOpen && <p className={isOpen ? "in" : "out"}>{answer}</p>}
         </div>
     </>

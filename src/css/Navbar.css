@@ -187,6 +187,6 @@ nav .nav-button .button-modal {
 
 @media screen and (max-width: 940px) {
     nav {
-        background-color: red;
+        border: solid red;
     }
 }
