@@ -37,25 +37,6 @@ nav .nav-first_links ul li {
     cursor: pointer;
 }
 
-nav .nav-first_links ul li a {
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background-color: var(--text-color);
-        transition: width 0.3s ease;
-    }
-
-    &:hover::before {
-        width: 100%;
-    }
-}
-
 nav .nav-button {
     margin-right: 4rem;
 }

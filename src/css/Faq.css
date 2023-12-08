@@ -1,0 +1,61 @@
+.faq-title h1 {
+    padding-top: 90px;
+    font-size: 55px;
+    font-weight: 600;
+    margin-left: 65px;
+}
+
+.faq-content div h2 {
+    padding-top: 85px;
+    font-size: 30px;
+    font-weight: 560;
+    margin-left: 110px;
+}
+
+.faq-item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 110px;
+    margin-right: 110px;
+    border-bottom: solid 1px var(--second-color);
+}
+
+.faq-item h3 {
+    user-select: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    padding-top: 20px;
+    font-size: 13px;
+    color: var(--second-color);
+    line-height: 150%;
+    
+    &.in {
+        animation: In 0.5s ease;
+    }
+
+    &.out {
+        animation: Out 0.5s ease;
+    }
+}
+
+@keyframes In {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
