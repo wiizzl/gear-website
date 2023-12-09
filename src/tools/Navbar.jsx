@@ -37,7 +37,9 @@ export function Navbar({ bgColor, cartPage }) {
                     <li>
                         <ScrollLink style={{color: textColor}} activeClass="active" to="features" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Caractéristiques</ScrollLink>
                     </li>
-                    <li><NavLink style={{color: textColor}} to="faq">FAQ</NavLink></li>
+                    <li>
+                        <NavLink style={{color: textColor}} to="faq">FAQ</NavLink>
+                    </li>
                 </ul>
             </div>
             <div className="nav-button">
