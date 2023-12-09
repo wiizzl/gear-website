@@ -49,8 +49,6 @@
             margin-right: 40px;
 
             & ul {
-                word-wrap: break-word;
-
                 &:nth-child(1) {
                     margin-right: 100px;
                 }
@@ -67,5 +65,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        border: solid red;
     }
 }

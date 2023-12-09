@@ -13,7 +13,7 @@ import { CiTrash } from "react-icons/ci";
 
 import logowhite from '../assets/images/logo-white.svg';
 import logoblack from '../assets/images/logo-black.svg';
-import cartpreview from '../assets/images/cart-preview.webp';
+import cartpreview from '../assets/images/cart/preview.webp';
 
 export function Navbar({ bgColor, cartPage }) {
     const navigate = useNavigate();
