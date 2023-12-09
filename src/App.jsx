@@ -4,7 +4,7 @@ import { createHashRouter, RouterProvider, Outlet, useRouteError, useLocation } 
 
 import { Accueil, Faq, Compte, Panier } from './pages';
 
-import { Navbar } from './tools';
+import { Navbar, Footer } from './tools';
 
 const websiteRouter = createHashRouter([
     {
@@ -49,6 +49,7 @@ function Root() {
     return <>
         <Navbar bgColor={isAccueilPage ? "black" : "white"} cartPage={isCartPage ? "none" : "initial"}/>
         <Outlet/>
+        <Footer></Footer>
     </>
 }
 

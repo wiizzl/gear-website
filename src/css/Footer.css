@@ -1,0 +1,40 @@
+.footer {
+    padding-top: 50px;
+    color: var(--text-color);
+}
+
+.footer img {
+    rotate: 180deg;
+}
+
+.footer div {
+    margin-top: -40px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #0d0f17;
+}
+
+.footer .footer-content {
+    display: flex;
+}
+
+.footer div div:nth-child(1) {
+    margin-left: 50px;
+    & img {
+        transform: rotate(180deg);
+    }
+    & p {
+        padding-top: 50px;
+        color: var(--text-color);
+    }
+}
+
+.footer div div:nth-child(2) {
+    & ul li {
+        list-style: none;
+    }
+    & a {
+        color: var(--text-color);
+        margin-right: 100px;
+    }
+}
