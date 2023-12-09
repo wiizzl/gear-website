@@ -16,7 +16,7 @@ export const Footer = () => {
     }
     return <>
         <div className="footer">
-            <img src={separator} alt=""/>
+            <img className="separator" src={separator} alt=""/>
             <div className="footer-content">
                 <div>
                     <img src={logo} alt=""/>
@@ -31,19 +31,24 @@ export const Footer = () => {
                             <li>
                                 <ScrollLink activeClass="active" to="features" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Caractéristiques</ScrollLink>
                             </li>
-                            <li><NavLink to="faq">FAQ</NavLink></li>
+                            <li>
+                                <NavLink to="faq">FAQ</NavLink>
+                            </li>
                         </ul>
-                    </div>
-                    <div>
                         <ul>
-                            <li><NavLink to="legal">Mentions légales</NavLink></li>
-                            <li><NavLink to="confidentiality">Politique de confidentialité</NavLink></li>
-                            <li><NavLink to="conditions">Conditions générales de vente</NavLink></li>
-                            <li onClick={noCookiesHere}>Gérer vos cookies</li>
+                            <li>
+                                <NavLink to="legal">Mentions légales</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="confidentiality">Politique de confidentialité</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="conditions">Conditions générales de vente</NavLink>
+                            </li>
+                            <li onClick={noCookiesHere}>
+                                <p>Gérer vos cookies</p>
+                            </li>
                         </ul>
-                    </div>
-                    <div>
-
                     </div>
                 </div>
             </div>
