@@ -3,6 +3,7 @@
 
     & .separator {
         transform: rotate(180deg);
+        user-select: none;
     }
 }
 

@@ -15,12 +15,20 @@ import presentation2 from '../assets/images/presentation/presentation2.webp';
 import presentation3 from '../assets/images/presentation/presentation3.webp';
 import presentation4 from '../assets/images/presentation/presentation4.webp';
 
+import buy1 from '../assets/images/buy/buy1.webp';
+import buy2 from '../assets/images/buy/buy2.webp';
+import buy3 from '../assets/images/buy/buy3.webp';
+import buy4 from '../assets/images/buy/buy4.webp';
+import buy5 from '../assets/images/buy/buy5.webp';
+import buy6 from '../assets/images/buy/buy6.webp';
+
 import selecteur from '../assets/images/features/selecteur.webp';
 
 export function Accueil() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slide_number = 4
-    const images = [presentation1, presentation2, presentation3, presentation4]
+    const presentationimage = [presentation1, presentation2, presentation3, presentation4]
+    const buyimage = [buy1, buy2, buy3, buy4, buy5, buy6]
     const icons = [
         <FaRegKeyboard key="keyboard" className="transition"/>,
         <TfiReload key="reload" className="transition"/>,
@@ -49,7 +57,7 @@ export function Accueil() {
         </section>
         <section id="presentation">
             <div>
-                <img className="transition" src={images[currentSlide]} alt=""/>
+                <img className="transition" src={presentationimage[currentSlide]} alt=""/>
             </div>
             <div>
                 <h2>Présentation</h2>
@@ -80,8 +88,27 @@ export function Accueil() {
                 {/* <img src={selecteur} alt=""/> */}
             </div>
         </section>
-        <section>
-
+        <section id="buy">
+            <div>
+                <img className="transition" src={buyimage[currentSlide]} alt=""/>
+            </div>
+            <div>
+                <h1>Tryhard, le clavier mécanique gasket <br/>ultra-compact</h1>
+                <div>
+                    <p>Le clavier Tryhard est un clavier mécanique haut de gamme, construit entièrement sur-mesure grâce aux conseils d&apos;un consultant expert en clavier, aux talents d&apos;une équipe d&apos;ingénieurs dédiés et à l&apos;expérience gaming du créateur de contenu CYRILmp4.</p>
+                </div>
+                <div>
+                    <IoArrowBackCircleOutline onClick={() => {
+                        handleSlide(-1)
+                    }}/>
+                    <IoArrowForwardCircleOutline onClick={() => {
+                        handleSlide(1)
+                    }}/>
+                </div>
+            </div>
+            <div>
+                {/* Newsletter */}
+            </div>
         </section>
     </>
 }
