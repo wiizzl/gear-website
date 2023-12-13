@@ -161,6 +161,11 @@ h1 {
             margin-right: 200px;
             line-height: 150%;
             color: var(--second-color);
+
+            @media screen and (max-width: 1500px) {
+                margin-left: 80px;
+                margin-right: 10px;
+            }
         }
     }
     & div:nth-child(2) {

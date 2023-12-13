@@ -80,7 +80,9 @@ export function Navbar({ bgColor, cartPage }) {
                                 </div>
                                 <p>Frais de livraison calculés à la prochaine étape.</p>
                                 <div>
-                                    <button>Procéder au paiement</button>
+                                    <button onClick={() => {
+                                        alert("Ce site n'est qu'une reproduction, nous ne vendons donc pas de produit !");
+                                    }}>Procéder au paiement</button>
                                     <button onClick={close}>Continuer votre visite</button>
                                 </div>
                             </div>

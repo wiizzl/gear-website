@@ -12,9 +12,6 @@ export const Footer = () => {
     const backToHome = () => {
         navigate('/');
     }
-    const noCookiesHere = () => {
-        alert("Il n'y a aucun cookies sur cette reproduction, pas d'inquiètudes !")
-    }
     return <>
         <div className="footer">
             <img className="separator" src={separator} alt=""/>
@@ -53,7 +50,9 @@ export const Footer = () => {
                                 <NavLink to="conditions">Conditions générales de vente</NavLink>
                             </li>
                             <li>
-                                <a onClick={noCookiesHere}>Gérer vos cookies</a>
+                                <a onClick={() => {
+                                    alert("Il n'y a aucun cookies sur cette reproduction, pas d'inquiètudes !");
+                                }}>Gérer vos cookies</a>
                             </li>
                         </ul>
                     </div>

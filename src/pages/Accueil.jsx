@@ -114,24 +114,22 @@ export function Accueil() {
                 <div>
                     <label htmlFor="prenom">PRÉNOM</label>
                     <br/>
-                    <input type="text" name="prenom" placeholder="Prénom"/>
+                    <input type="text" id="prenom" placeholder="Prénom" autoComplete={false}/>
                 </div>
                 <div>
                     <label htmlFor="email">ADRESSE E-MAIL</label>
                     <br/>
-                    <input type="text" name="email" placeholder="Adresse e-mail"/>
+                    <input type="text" id="email" placeholder="Adresse e-mail" autoComplete={false}/>
                 </div>
                 <div>
-                    <input type="checkbox" name="consent"/>
+                    <input type="checkbox" id="consent"/>
                     <br/>
                     <label htmlFor="consent">J&apos;autorise Tryhard à utiliser mes données conformément à notre politique de confidentialité</label>
                 </div>
                 <div>
-                    <button onClick={
-                        () => {
-                            alert("Je suis content que cette reproduction vous plaise, mais il n'y a pas de newsletter !")
-                        }
-                    }>S&apos;inscrire</button>
+                    <button onClick={() => {
+                        alert("Je suis content que cette reproduction vous plaise, mais il n'y a pas de newsletter !");
+                    }}>S&apos;inscrire</button>
                 </div>
             </div>  
         </div>
