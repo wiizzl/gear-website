@@ -2,6 +2,10 @@ section {
     min-height: 100vh;
 }
 
+h1 {
+    user-select: none;
+}
+
 #accueil {
     &::before {
         content: "";
