@@ -22,8 +22,6 @@ import buy4 from '../assets/images/buy/buy4.webp';
 import buy5 from '../assets/images/buy/buy5.webp';
 import buy6 from '../assets/images/buy/buy6.webp';
 
-import selecteur from '../assets/images/features/selecteur.webp';
-
 export function Accueil() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slide_number = 4
@@ -106,9 +104,36 @@ export function Accueil() {
                     }}/>
                 </div>
             </div>
-            <div>
-                {/* Newsletter */}
-            </div>
         </section>
+        <div className="newsletter">
+            <div>
+                <h1>Newsletter</h1>
+                <p>Si vous ne voulez rien manquer des nouvelles remises en stock et des dernières actualités de Tryhard (produits, collections, etc...), c&apos;est par ici ! Nous n&apos;envoyons que peu de mails, soyez rassurés ;)</p>
+            </div>
+            <div>
+                <div>
+                    <label htmlFor="prenom">PRÉNOM</label>
+                    <br/>
+                    <input type="text" name="prenom" placeholder="Prénom"/>
+                </div>
+                <div>
+                    <label htmlFor="email">ADRESSE E-MAIL</label>
+                    <br/>
+                    <input type="text" name="email" placeholder="Adresse e-mail"/>
+                </div>
+                <div>
+                    <input type="checkbox" name="consent"/>
+                    <br/>
+                    <label htmlFor="consent">J&apos;autorise Tryhard à utiliser mes données conformément à notre politique de confidentialité</label>
+                </div>
+                <div>
+                    <button onClick={
+                        () => {
+                            alert("Je suis content que cette reproduction vous plaise, mais il n'y a pas de newsletter !")
+                        }
+                    }>S&apos;inscrire</button>
+                </div>
+            </div>  
+        </div>
     </>
 }

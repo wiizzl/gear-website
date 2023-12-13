@@ -139,3 +139,85 @@ section {
         }
     }
 }
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & div:nth-child(1) {
+        & h1 {
+            padding-top: 70px;
+            margin-left: 200px;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        & p {
+            padding-top: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+            line-height: 150%;
+            color: var(--second-color);
+        }
+    }
+    & div:nth-child(2) {
+        & div:nth-child(1) {
+            margin-left: 100px;
+            padding-top: 70px;
+            margin-right: 80px;
+            border-bottom: solid 1px var(--second-color);
+        }
+        & div:nth-child(2) {
+            margin-left: 100px;
+            padding-top: 20px;
+            margin-right: 80px;
+            border-bottom: solid 1px var(--second-color);
+        }
+        & div:nth-child(3) {
+            display: flex;
+            padding-top: 20px;
+            margin-left: 100px;
+
+            & input {
+                margin-right: 15px;
+            }
+            & label {
+                margin-top: 3px;
+                margin-right: 90px;
+                color: black;
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+        & div:nth-child(4) {
+            padding-top: 20px;
+
+            & button {
+                margin-left: 100px;
+                border: 1px solid var(--second-color);
+                background-color: white;
+                border-radius: 3rem;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 450;
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                transition: transform 0.3s ease-in-out;
+            
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+        & label {
+            font-size: 12px;
+            font-weight: 300;
+            color: var(--second-color);
+        }
+        & input {
+            border: none;
+            padding-bottom: 8px;
+        }
+    }
+}
