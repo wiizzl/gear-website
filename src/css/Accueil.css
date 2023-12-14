@@ -102,34 +102,86 @@ h1 {
     }
     & div:nth-child(2) {
         display: grid;
-        grid-template-rows: auto auto auto;
-        margin-left: 70px;
-        margin-right: 70px;
         
+        & figure {
+            position: relative;
+
+            & figcaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: var(--text-color);
+                padding-bottom: 60px;
+                margin-left: 30px;
+                margin-right: 10px;
+                font-size: 20px;
+    
+                &.fig-desc {
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+                    font-size: 12px;
+                    top: 85%;
+                }
+            }
+            &:hover .fig-desc {
+                opacity: 1;
+            }
+        }
         & img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+            width: 100%;
+            object-fit: cover;
             border-radius: 1rem;
+            user-select: none;
+            transition: filter 0.3s ease-in-out;
+
+            &:hover {
+                filter: brightness(70%);
+            }
         }
         & div {
+            margin-left: 70px;
+            margin-right: 70px;
             display: grid;
             gap: 0 25px;
             
             &:nth-child(1) {
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1.5fr 2fr 0.8fr;
                 padding-top: 50px;
+
+                & figure {
+                    & img {
+                        height: 300px;
+                    }
+                    /* TODO: améliorer l'effet d'hover pour premettre un décalage entre l'image 2 de la ligne 2 et les images 2-3 de la ligne 1 */
+                    /* &:nth-child(2) img, &:nth-child(3) img {
+                        height: 250px;
+                    } */
+                }
             }
-        }
-        & div:nth-child(2) {
-            grid-template-columns: 2.5fr 4fr;
-            padding-bottom: 25px;
-            padding-top: 25px;
-        }
-        & div:nth-child(3) {
-            grid-template-columns: 2fr 0.973fr;
-            padding-bottom: 100px;
+            &:nth-child(2) {
+                grid-template-columns: 0.526fr 1fr;
+                padding-top: 25px;
+                padding-bottom: 25px;
+
+                & figure {
+                    & img {
+                        height: 350px;
+                    }
+                    /* TODO: améliorer l'effet d'hover pour premettre un décalage entre l'image 2 de la ligne 2 et les images 2-3 de la ligne 1 */
+                    /* &:nth-child(2) img {
+                        height: 400px;
+                        margin-top: -50px;
+                    } */
+                }
+            }
+            &:nth-child(3) {
+                grid-template-columns: 2fr 1fr;
+                padding-bottom: 100px;
+
+                & img {
+                    height: 300px;
+                }
+            }
         }
     }
 }
