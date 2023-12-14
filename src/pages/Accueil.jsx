@@ -15,6 +15,14 @@ import presentation2 from '../assets/images/presentation/presentation2.webp';
 import presentation3 from '../assets/images/presentation/presentation3.webp';
 import presentation4 from '../assets/images/presentation/presentation4.webp';
 
+import features1 from '../assets/images/features/selecteur.webp';
+import features2 from '../assets/images/features/compact.webp';
+import features3 from '../assets/images/features/switch.webp';
+import features4 from '../assets/images/features/poids.webp';
+import features5 from '../assets/images/features/impression.webp';
+import features6 from '../assets/images/features/eclairage.webp';
+import features7 from '../assets/images/features/batterie.webp';
+
 import buy1 from '../assets/images/buy/buy1.webp';
 import buy2 from '../assets/images/buy/buy2.webp';
 import buy3 from '../assets/images/buy/buy3.webp';
@@ -83,7 +91,19 @@ export function Accueil() {
                 <h1>Pensé pour les <span>joueurs</span></h1>
             </div>
             <div>
-                {/* <img src={selecteur} alt=""/> */}
+                <div>
+                    <img src={features1} alt=""/>
+                    <img src={features2} alt=""/>
+                    <img src={features3} alt=""/>
+                </div>
+                <div>
+                    <img src={features4} alt=""/>
+                    <img src={features5} alt=""/>
+                </div>
+                <div>
+                    <img src={features6} alt=""/>
+                    <img src={features7} alt=""/>
+                </div>
             </div>
         </section>
         <section id="buy">

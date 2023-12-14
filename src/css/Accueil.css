@@ -79,9 +79,9 @@ h1 {
 #features {
     & div:nth-child(1) {
         text-align: center;
-        padding-top: 130px;
 
         & h2 {
+            padding-top: 130px;
             font-size: 25px;
             font-weight: 250;
         }
@@ -101,7 +101,36 @@ h1 {
         }
     }
     & div:nth-child(2) {
-
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+        & img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 1rem;
+        }
+        & div {
+            display: grid;
+            gap: 0 25px;
+            
+            &:nth-child(1) {
+                grid-template-columns: 1fr 1fr 1fr;
+                padding-top: 50px;
+            }
+        }
+        & div:nth-child(2) {
+            grid-template-columns: 2.5fr 4fr;
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+        & div:nth-child(3) {
+            grid-template-columns: 2fr 0.973fr;
+            padding-bottom: 100px;
+        }
     }
 }
 
