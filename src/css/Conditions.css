@@ -1,0 +1,41 @@
+.cond-title {
+    & h1 {
+        padding-top: 90px;
+        font-size: 55px;
+        font-weight: 600;
+        margin-left: 250px;
+    }
+    & p {
+        font-style: italic;
+        font-size: 13px;
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.cond-content {
+    margin-left: 300px;
+    margin-right: 300px;
+
+    & p {
+        font-size: 13px;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+    & div:nth-child(2) {
+        & h3 {
+            padding-bottom: 30px;
+            font-size: 90%;
+        }
+        & ul li {
+            font-size: 13px;
+
+            & span {
+                font-weight: bold;
+                line-height: 60px;
+            }
+        }
+    }
+}

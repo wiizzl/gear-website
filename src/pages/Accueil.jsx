@@ -95,41 +95,41 @@ export function Accueil() {
                     <figure>
                         <img src={features1} alt=""/>
                         <figcaption className="fig-title">Sélecteur tri-mode</figcaption>
-                        <figcaption className="fig-desc">Dispositif permettant de relier le clavier à l&apos;ordinateur de 3 façons : en filaire via un câble USB-C (fourni), en réseau WiFi (dongle fourni) ou en Bluetooth.</figcaption>
+                        {/* <figcaption className="fig-desc">Dispositif permettant de relier le clavier à l&apos;ordinateur de 3 façons : en filaire via un câble USB-C (fourni), en réseau WiFi (dongle fourni) ou en Bluetooth.</figcaption> */}
                     </figure>
                     <figure>
                         <img src={features2} alt=""/>
                         <figcaption className="fig-title">Compact 65%</figcaption>
-                        <figcaption className="fig-desc">Clavier mécanique de taille réduite (68 touches), sans pavé numérique ou tout autre élément superflu, pour offrir une solution épurée, qui va à l&apos;essentiel.</figcaption>
+                        {/* <figcaption className="fig-desc">Clavier mécanique de taille réduite (68 touches), sans pavé numérique ou tout autre élément superflu, pour offrir une solution épurée, qui va à l&apos;essentiel.</figcaption> */}
                     </figure>
                     <figure>
                         <img src={features3} alt=""/>
                         <figcaption className="fig-title">Switch CIDOO</figcaption>
-                        <figcaption className="fig-desc">Switch mécaniques idéaux pour ceux qui apprécient une expérience de frappe lourde.</figcaption>
+                        {/* <figcaption className="fig-desc">Switch mécaniques idéaux pour ceux qui apprécient une expérience de frappe lourde.</figcaption> */}
                     </figure>
                 </div>
                 <div>
                     <figure>
                         <img src={features4} alt=""/>
                         <figcaption className="fig-title">Poids</figcaption>
-                        <figcaption className="fig-desc">920g (à 10g près). Poids parfait pour une stabilité accrue et une réduction des vibrations indésirables.</figcaption>
+                        {/* <figcaption className="fig-desc">920g (à 10g près). Poids parfait pour une stabilité accrue et une réduction des vibrations indésirables.</figcaption> */}
                     </figure>
                     <figure>
                         <img src={features5} alt=""/>
                         <figcaption className="fig-title">Impression des caractères</figcaption>
-                        <figcaption className="fig-desc">L&apos;originalité du clavier se joue dans l&apos;impression des caractères, visibles uniquement sur la face avant (et non la face du dessus comme traditionnellement). Impression faite via sublimation thermique.</figcaption>
+                        {/* <figcaption className="fig-desc">L&apos;originalité du clavier se joue dans l&apos;impression des caractères, visibles uniquement sur la face avant (et non la face du dessus comme traditionnellement). Impression faite via sublimation thermique.</figcaption> */}
                     </figure>
                 </div>
                 <div>
                     <figure>
                         <img src={features6} alt=""/>
                         <figcaption className="fig-title">Rétro-éclairage</figcaption>
-                        <figcaption className="fig-desc">Rétro-éclairage blanc par défaut, avec possibilité de le personnaliser. Les LED sont positionnées du côté inférieur des interrupteurs mécaniques, pointant vers le bas (le sud par rapport à l&apos;utilisateur), afin de ne créer aucune interférence qu&apos;importe le profil de touches choisi.</figcaption>
+                        {/* <figcaption className="fig-desc">Rétro-éclairage blanc par défaut, avec possibilité de le personnaliser. Les LED sont positionnées du côté inférieur des interrupteurs mécaniques, pointant vers le bas (le sud par rapport à l&apos;utilisateur), afin de ne créer aucune interférence qu&apos;importe le profil de touches choisi.</figcaption> */}
                     </figure>
                     <figure>
                         <img src={features7} alt=""/>
                         <figcaption className="fig-title">Batterie</figcaption>
-                        <figcaption className="fig-desc">Batterie 3000mAh. Mode veille automatique disponible. Jusqu&apos;à 60h d&apos;autonomie LED éteintes, 10h en mode RVB et 5h en mode blanc statique, à pleine intensité.</figcaption>
+                        {/* <figcaption className="fig-desc">Batterie 3000mAh. Mode veille automatique disponible. Jusqu&apos;à 60h d&apos;autonomie LED éteintes, 10h en mode RVB et 5h en mode blanc statique, à pleine intensité.</figcaption> */}
                     </figure>
                 </div>
             </div>
