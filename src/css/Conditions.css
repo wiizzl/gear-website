@@ -21,7 +21,6 @@
 
     & p {
         font-size: 13px;
-        line-height: 20px;
         padding-bottom: 30px;
     }
     & div:nth-child(2) {
@@ -34,7 +33,6 @@
 
             & span {
                 font-weight: bold;
-                line-height: 60px;
             }
         }
     }
