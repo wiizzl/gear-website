@@ -2,7 +2,7 @@ import './css/App.css';
 
 import { createHashRouter, RouterProvider, Outlet, useRouteError, useLocation } from 'react-router-dom';
 
-import { Accueil, Faq, Compte, Panier, Legal, Confidentiality, Conditions } from './pages';
+import { Accueil, Faq, Compte, Panier} from './pages';
 import { Navbar, Footer } from './tools';
 
 const websiteRouter = createHashRouter([
@@ -26,19 +26,7 @@ const websiteRouter = createHashRouter([
             {
                 path: 'cart',
                 element: <Panier/>,
-            },
-            {
-                path: 'legal',
-                element: <Legal/>,
-            },
-            {
-                path: 'confidentiality',
-                element: <Confidentiality/>,
-            },
-            {
-                path: 'conditions',
-                element: <Conditions/>,
-            },
+            }
         ]
     },
 ])

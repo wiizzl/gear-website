@@ -41,13 +41,19 @@ export const Footer = () => {
                         </ul>
                         <ul>
                             <li>
-                                <NavLink to="legal">Mentions légales</NavLink>
+                                <a onClick={() => {
+                                    alert("La page des mentions légales n'a pas été reproduite pour le moment...");
+                                }}>Mentions légales</a>
                             </li>
                             <li>
-                                <NavLink to="confidentiality">Politique de confidentialité</NavLink>
+                                <a onClick={() => {
+                                    alert("La page de la pôlitique de confidentialité n'a pas été reproduite pour le moment...");
+                                }}>Politique de confidentialité</a>
                             </li>
                             <li>
-                                <NavLink to="conditions">Conditions générales de vente</NavLink>
+                                <a onClick={() => {
+                                    alert("La page des conditions générales de vente n'a pas été reproduite pour le moment...");
+                                }}>Conditions générales de vente</a>
                             </li>
                             <li>
                                 <a onClick={() => {
