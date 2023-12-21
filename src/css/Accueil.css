@@ -2,7 +2,7 @@ section {
     min-height: 100vh;
 }
 
-h1 {
+h1, h2, h3 {
     user-select: none;
 }
 
@@ -25,17 +25,19 @@ h1 {
             font-size: 14px;
             line-height: 120%;
             padding: 10px;
-            border: solid 2px #525875;
+            border: solid 1px #525875;
             border-radius: 2rem;
             background-color: #5b5f7470;
 
             & span {
+                font-weight: 500;
                 background-color: var(--second-color);
                 border-radius: 2rem;
                 padding: 5px;
                 margin-left: -5px;
                 margin-right: 8px;
                 padding-right: 10px;
+                padding-left: 10px;
             }
         }
         & h3 {
