@@ -47,7 +47,7 @@ export const Footer = () => {
                             </li>
                             <li>
                                 <a onClick={() => {
-                                    alert("La page de la pôlitique de confidentialité n'a pas été reproduite pour le moment...");
+                                    alert("La page de la politique de confidentialité n'a pas été reproduite pour le moment...");
                                 }}>Politique de confidentialité</a>
                             </li>
                             <li>

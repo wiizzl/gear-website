@@ -1,7 +1,9 @@
 import '../css/Accueil.css';
 
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
+import { BsStars } from 'react-icons/bs';
 import { FaRegKeyboard } from 'react-icons/fa6';
 import { TfiReload } from 'react-icons/tfi';
 import { GrValidate } from 'react-icons/gr';
@@ -32,7 +34,6 @@ import buy6 from '../assets/images/buy/buy6.webp';
 
 export function Accueil() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slide_number = 4
     const presentationimage = [presentation1, presentation2, presentation3, presentation4]
     const buyimage = [buy1, buy2, buy3, buy4, buy5, buy6]
     const icons = [
@@ -54,11 +55,17 @@ export function Accueil() {
         "En quête d'un clavier qui résiste à l'épreuve du temps ? Matériaux de haute qualité, possibilité de remplacement simple et autonome des pièces usées, interrupteurs mécaniques plus robustes... Le clavier Tryhard vous garantit une durée de vie plus longue par rapport aux claviers traditionnels et contribue ainsi à la réduction de l'empreinte écologique grâce à son approche plus durable et écoresponsable de la technologie !"
     ]
     const handleSlide = (direction) => {
-        const nextSlide = (currentSlide + direction + slide_number) % slide_number
+        const nextSlide = (currentSlide + direction + 4) % 4
         setCurrentSlide(nextSlide);
     }
     return <>
         <section id="accueil">
+            <div>
+                <p><span><BsStars/> Succès !</span> Nouvelle production en cours</p>
+                <h3>Le compromis ultime entre performance, design et durabilité.</h3>
+                <h1>TRYHARD, le clavier <br/>mécanique pour joueurs <br/>exigeants.</h1>
+                <Link to="presentation" spy={true} smooth={true} offset={50} duration={500}>En savoir plus &gt;</Link>
+            </div>
             <video src={background} autoPlay loop muted/>
         </section>
         <section id="presentation">

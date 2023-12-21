@@ -32,10 +32,10 @@ export function Navbar({ bgColor, cartPage }) {
             <div className="nav-first_links">
                 <ul>
                     <li>
-                        <ScrollLink style={{color: textColor}} activeClass="active" to="presentation" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Présentation</ScrollLink>
+                        <ScrollLink style={{color: textColor}} to="presentation" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Présentation</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink style={{color: textColor}} activeClass="active" to="features" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Caractéristiques</ScrollLink>
+                        <ScrollLink style={{color: textColor}} to="features" spy={true} smooth={true} offset={50} duration={500} onClick={backToHome}>Caractéristiques</ScrollLink>
                     </li>
                     <li>
                         <NavLink style={{color: textColor}} to="faq">FAQ</NavLink>
