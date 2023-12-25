@@ -48,7 +48,7 @@ function Root() {
     return <>
         <Navbar bgColor={isAccueilPage ? "black" : "white"} cartPage={isCartPage ? "none" : "initial"}/>
         <Outlet/>
-        <Footer></Footer>
+        <Footer/>
     </>
 }
 
